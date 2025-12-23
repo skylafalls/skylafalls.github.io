@@ -1,0 +1,34 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Hello, World!</h1>
+      <p>
+        This is
+        <a href="https://youtube.com/@skylafalls" target="_blank">Sky's</a>
+        website, built with very little
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+        (as I found it way too annoying) and
+        <a href="https://astro.builg" target="_blank">Astro,</a>
+        after I rewrote it from the
+        <a href="https://nuxt.com" target="_blank">Nuxt.js</a>
+        codebase.
+        <br />
+        The source code for the website can be found
+        <a href="https://github.com/skylafalls/skylafalls.github.io" target="_blank">here.</a>
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
